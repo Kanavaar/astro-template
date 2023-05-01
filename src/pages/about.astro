@@ -1,5 +1,19 @@
 ---
 const title = "About Me"
+
+const identity = {
+	name: "Tilman Andre Mix",
+	country: "Germany",
+	occupation: "Student",
+	hobbies: ["Programming", "Reading"],
+};
+
+const skills = ["Rust", "Astro"]
+
+const happy = true;
+const finished = false;
+const goal = 3;
+
 ---
 <html lang="en">
   <head>
@@ -14,8 +28,25 @@ const title = "About Me"
     <h1>{ title }</h1>
     <h2>... and my new Astro site!</h2>
 
-    <p>I am working through Astro's introductory tutorial. This is the second page on my website, and it's the first one I built myself!</p>
+    <p>
+        Moin,
 
-    <p>This site will update as I complete more of the tutorial, so keep checking back and see how my journey is going!</p>
+        my name is { identity.name } and I'm from { identity.country }.
+        I'm a { identity.occupation } with the hobbies { identity.hobbies[0] } and { identity.hobbies[1] }.
+    </p>
+
+    <div>
+        <h2>Skills</h2>
+        <p>My Skills are: </p>
+
+        <ul>
+            { skills.map((skill) => <li>{ skill }</li>) }
+        </ul>
+
+    </div>
+
+    { happy && <p>I Like to learn Astro</p>}
+    { finished && <p> I finished thier tutorial</p>}
+    { goal === 3 && <p>I would like to finish their tutorial in the next { goal } days</p>}
   </body>
 </html>
