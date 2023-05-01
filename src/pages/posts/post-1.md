@@ -1,14 +1,19 @@
 ---
-title: 'My First Blog Post'
-pubDate: 2022-07-01
+title: 'Learning Astro'
+pubDate: 2023-05-01
 description: 'This is the first post of my new Astro blog.'
-author: 'Astro Learner'
+author: 'Tilman Andre Mix'
 image:
     url: 'https://docs.astro.build/assets/full-logo-light.png' 
     alt: 'The full Astro logo.'
 tags: ["astro", "blogging", "learning in public"]
 ---
-# My First Blog Post
+
+[Home](/)
+[About](/about)
+[Blog](/blog)
+
+# Learning [Astro](https://astro.build) with this blog
 
 Published on: 2022-07-01
 
