@@ -1,6 +1,7 @@
 ---
 import '../styles/style.css';
 import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
 const title = "About Me"
 
 const identity = {
@@ -61,5 +62,6 @@ const skillFontWeight = "bold";
     { happy && <p>I Like to learn Astro</p>}
     { finished && <p> I finished thier tutorial</p>}
     { goal === 3 && <p>I would like to finish their tutorial in the next { goal } days</p>}
+    <Footer />
   </body>
 </html>
