@@ -2,6 +2,7 @@
 import '../styles/style.css';
 import Navigation from '../components/Navigation.astro';
 import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
 const title = "Home Page";
 ---
 
@@ -14,7 +15,7 @@ const title = "Home Page";
 		<title>{ title }</title>
 	</head>
 	<body>
-		<Navigation />
+		<Header title={ title } />
 
 		<h1> { title }</h1>
 		<p>
