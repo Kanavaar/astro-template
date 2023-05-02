@@ -1,7 +1,26 @@
 ---
-import '../styles/style.css';
-const platform = "codeberg";
-const username = "tilmanmixyz";
+import "../styles/style.css";
+import Social from "./Social.astro";
 ---
 
-<footer>Learn more about my projects at <a href={`https://${ platform }.org/${ username }`} > {platform} </a></footer>
+<html>
+    <head>
+        <style>
+            hr {
+                margin-top: 3rem;
+            }
+
+            footer {
+                display: flex;
+                gap: 1rem;
+            }
+        </style>
+    </head>
+    <body>
+        <hr />
+        <footer>
+            <Social platform="codeberg" username="tilmanmixyz" tld="org" />
+            <Social platform="github" username="tilmanmixyz" tld="com" />
+        </footer>
+    </body>
+</html>
