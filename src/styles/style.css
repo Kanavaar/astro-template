@@ -18,13 +18,13 @@ body {
 }
 
 a {
-    border-bottom: 3px solid var(--blue);
+    border-bottom: 3px solid var(--red);
     color: var(--fg);
     text-decoration: none;
 }
 
 a:hover {
-    background: var(--red);
+    background: var(--blue);
 }
 
 a:active {
