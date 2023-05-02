@@ -1,0 +1,36 @@
+:root {
+    --bg: #282828;
+    --fg: #ebdbb2;
+    --red: #cc241d;
+    --blue: #458588;
+}
+
+html {
+    color: var(--fg);
+    background: var(--bg);
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0 auto;
+    max-width: 80em;
+}
+
+a {
+    border-bottom: 3px solid var(--blue);
+    color: var(--fg);
+    text-decoration: none;
+}
+
+a:hover {
+    background: var(--red);
+}
+
+a:active {
+    color: var(--fg);
+}
+
+li {
+    padding-bottom: 5px;
+}
