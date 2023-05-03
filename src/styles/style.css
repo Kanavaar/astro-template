@@ -5,6 +5,8 @@
     --fg: #ebdbb2;
     --red: #cc241d;
     --blue: #458588;
+
+    --grey: #928374;
 }
 
 html {
@@ -36,4 +38,55 @@ a:active {
 
 li {
     padding-bottom: 5px;
+}
+
+body {
+    padding: 1rem;
+}
+
+footer {
+    display: flex;
+    gap: 1rem;
+    padding-top: 2px;
+    border-top: 2px solid var(--grey);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    border-bottom: 3px solid var(--fg);
+    padding-bottom: 10px;
+    margin: 1em 0 2em 0;
+    height: 1rem;
+}
+
+/* Nav Styles */
+
+.nav-links {
+    width: 100%;
+    top: 5rem;
+    left: 48px;
+    display: none;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.expanded {
+    display: unset;
+}
+
+@media screen and (min-width: 636px) {
+    .nav-links {
+        margin-left: 5rem;
+        display: block;
+        position: static;
+        width: auto;
+    }
+
+    .nav-links a {
+        display: inline-block;
+        padding: 0px 20px;
+    }
 }
