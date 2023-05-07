@@ -1,4 +1,6 @@
 ---
+layout: ../../layouts/MarkdownBaseLayout.astro
+
 title: My Third Blog Post
 author: 'Tilman Andre Mix'
 description: "I had some challenges, but asking in the community really helped!"
@@ -8,10 +10,6 @@ image:
 pubDate: 2023-05-01
 tags: ["astro", "learning in public", "setbacks", "community"]
 ---
-
-[Home](/)
-[About](/about)
-[Blog](/blog)
 
 # Even More [Astro](https://astro.build)
 

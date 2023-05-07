@@ -1,5 +1,8 @@
 ---
+layout: ../../layouts/MarkdownBaseLayout.astro
+
 title: 'More Astro'
+author: 'Tilman Andre Mix'
 pubDate: 2023-05-01
 description: "After learning some Astro, I couldn't stop!"
 image: 
@@ -7,10 +10,6 @@ image:
     alt: "Thumbnail of Astro arcs,"
 tags: ["astro", "blogging", "learning in public", "successes"]
 ---
-
-[Home](/)
-[About](/about)
-[Blog](/blog)
 
 # More [Astro](https://astro.build)
 

@@ -1,0 +1,14 @@
+---
+const { title } = Astro.props;
+const { author } = Astro.props;
+const { date } = Astro.props;
+
+import '../styles/style.css';
+---
+
+<div class="blog-header">
+  <h1> { title } </h1>
+  <div class="author"> { author } </div>
+  <div class="date"> { date } </div>
+  <br>
+</div>
