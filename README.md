@@ -1,5 +1,10 @@
 # Astro Starter Kit: Minimal
 
+## Preview
+
+![Desktop](./desktop.png)
+![Mobile](./mobile.png)
+
 ```
 npm create astro@latest -- --template minimal
 ```
