@@ -1,25 +1,29 @@
 @import url(./fonts.css);
 
 :root {
-    --bg: #282828;
-    --fg: #ebdbb2;
+    --bg: #fbf1c7;
+    --fg: #3c3638;
+
+    --dark-fg: #ebdbb2;
+    --dark-bg: #282828;
+    
     --red: #cc241d;
     --blue: #458588;
-
     --grey: #928374;
+
+    
 }
 
 html {
     color: var(--fg);
     background: var(--bg);
-    font-family: sans-serif;
+    font-family: "Lato", sans-serif;
 }
 
 body {
     margin: 0 auto;
     padding: 0 auto;
     max-width: 80em;
-    font-family: "Lato", sans-serif;
 }
 
 a {
@@ -112,4 +116,15 @@ footer {
 
 .hidden {
     display: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color: var(--dark-fg);
+    background-color: var(--dark-bg);
+  }
+
+  a {
+    color: var(--dark-fg);
+  }
 }
